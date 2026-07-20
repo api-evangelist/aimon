@@ -1,0 +1,27 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.aimon.ai/quickstart
+docs: https://docs.aimon.ai/quickstart
+summary:
+  types: [http]
+  api_key_in: [header]
+  http_schemes: [bearer]
+  oauth2_flows: []
+schemes:
+- name: apiKey
+  type: http
+  scheme: bearer
+  description: >-
+    AIMon authenticates API and SDK calls with a Bearer API key. Sign up at
+    app.aimon.ai, then go to My Account > Keys to copy your key. Provide it as the
+    HTTP Authorization header in the form "Bearer <AIMON_API_KEY>". The SDKs read the
+    key from the AIMON_API_KEY environment variable.
+  header: Authorization
+  header_format: Bearer <AIMON_API_KEY>
+  env_var: AIMON_API_KEY
+  key_management_url: https://app.aimon.ai/?screen=signup
+  sources: [https://docs.aimon.ai/quickstart, https://github.com/aimonlabs/aimon-python-sdk]
+notes: >-
+  There is a key-validation endpoint (GET /v1/api-key/{api_key}/validate) exposed by
+  the API for verifying a key. No OAuth2 or OpenID Connect flow is documented; auth is
+  a single long-lived Bearer API key.
