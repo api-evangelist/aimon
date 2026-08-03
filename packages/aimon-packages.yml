@@ -1,0 +1,28 @@
+generated: '2026-07-17'
+method: searched
+source: https://github.com/aimonlabs
+packages:
+- language: python
+  registry: pypi
+  name: aimon
+  url: https://pypi.org/project/aimon/
+  install: pip install -U aimon
+  repository: https://github.com/aimonlabs/aimon-python-sdk
+  official: true
+  description: Official AIMon Python SDK used to interact with the AIMon API and product — offline evals, continuous monitoring, and inline detection.
+- language: typescript
+  registry: npm
+  name: aimon
+  url: https://www.npmjs.com/package/aimon
+  install: npm install aimon
+  repository: https://github.com/aimonlabs/aimon-typescript-sdk
+  official: true
+  description: Official AIMon TypeScript/JavaScript SDK (Stainless-generated) for the AIMon API.
+- language: python
+  registry: pypi
+  name: aimon-llamaindex
+  url: https://pypi.org/project/aimon-llamaindex/
+  install: pip install aimon-llamaindex
+  repository: https://github.com/aimonlabs/aimon-llamaindex
+  official: true
+  description: AIMon extensions and utility functions for integrating AIMon detections with LlamaIndex.

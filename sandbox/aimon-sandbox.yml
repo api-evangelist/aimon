@@ -1,0 +1,32 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.aimon.ai/sandbox/
+type: playground
+url: https://www.aimon.ai/sandbox/
+signup_required: false
+description: >-
+  Interactive, no-signup web playground to try AIMon detections. Paste the context/facts,
+  the LLM-generated output to evaluate, and optionally the user query and instructions,
+  then hit "Test" to see detection scores. Limited to 10 trials without an account.
+metrics_available:
+- hallucination
+- instruction-adherence
+- context-quality
+- conciseness
+- completeness
+- toxicity
+inputs:
+- name: context
+  description: The source context / facts the output should be grounded in.
+- name: generated_text
+  description: The LLM output to evaluate.
+- name: user_query
+  description: Optional user query the output responds to.
+- name: instructions
+  description: Optional instructions to check adherence against.
+limits:
+  free_trials: 10
+notes: >-
+  For multiple evaluations with datasets and detailed reasonings, sign up for a full
+  account at app.aimon.ai. No published test API keys, test cards, or fixture values —
+  the sandbox is a hosted UI, not a separate test-mode API environment.

@@ -1,0 +1,68 @@
+generated: '2026-07-17'
+method: derived
+status: candidate
+source: https://github.com/aimonlabs/aimon-typescript-sdk/blob/main/api.md
+note: >-
+  No official hosted/remote AIMon MCP server was found. This is a CANDIDATE tool list
+  derived one-tool-per-operation from the published AIMon SDK REST surface (api.md).
+  Not a published server.
+server:
+  name: aimon
+  transport: http
+  base_url: https://sdkbe-production.aimon.ai
+  auth: Bearer AIMON_API_KEY
+tools:
+- name: create_user
+  description: Create a user.
+  http: POST /v1/user
+- name: retrieve_user
+  description: Retrieve the current user.
+  http: GET /v1/user
+- name: validate_api_key
+  description: Validate an API key.
+  http: GET /v1/api-key/{api_key}/validate
+- name: create_model
+  description: Create a model.
+  http: POST /v1/model
+- name: list_model_types
+  description: List available model types.
+  http: GET /v1/list-model-types
+- name: create_application
+  description: Create an application.
+  http: POST /v1/application
+- name: retrieve_evaluation_metrics
+  description: Retrieve metrics for an evaluation.
+  http: GET /v1/application/evaluations/{evaluation_id}/metrics
+- name: list_evaluation_metrics
+  description: List evaluation metrics.
+  http: GET /v1/application/evaluations/metrics
+- name: list_run_metrics
+  description: List metrics for an evaluation run.
+  http: GET /v1/application/evaluations/{evaluation_id}/run/{evaluation_run_id}/metrics
+- name: retrieve_production_metrics
+  description: Retrieve production monitoring metrics.
+  http: GET /v1/application/production/metrics
+- name: create_dataset
+  description: Create a dataset.
+  http: POST /v1/dataset
+- name: list_datasets
+  description: List datasets.
+  http: GET /v1/dataset
+- name: list_dataset_records
+  description: List dataset records.
+  http: GET /v1/dataset-records
+- name: create_dataset_collection
+  description: Create a dataset collection.
+  http: POST /v1/dataset-collection
+- name: create_evaluation
+  description: Create an evaluation.
+  http: POST /v1/evaluation
+- name: retrieve_evaluations
+  description: Retrieve evaluations.
+  http: GET /v1/evaluations
+- name: compute_metrics
+  description: Save and compute metrics.
+  http: POST /v1/save-compute-metrics
+- name: create_evaluation_run
+  description: Create an evaluation run.
+  http: POST /v1/evaluation-run
