@@ -2,10 +2,8 @@ generated: '2026-07-17'
 method: derived
 status: candidate
 source: https://github.com/aimonlabs/aimon-typescript-sdk/blob/main/api.md
-note: >-
-  No official hosted/remote AIMon MCP server was found. This is a CANDIDATE tool list
-  derived one-tool-per-operation from the published AIMon SDK REST surface (api.md).
-  Not a published server.
+note: No official hosted/remote AIMon MCP server was found. This is a CANDIDATE tool list derived one-tool-per-operation
+  from the published AIMon SDK REST surface (api.md). Not a published server.
 server:
   name: aimon
   transport: http
@@ -66,3 +64,9 @@ tools:
 - name: create_evaluation_run
   description: Create an evaluation run.
   http: POST /v1/evaluation-run
+deployment:
+  mode: none
+  verified: derived
+  tools: 18
+  checked: '2026-08-12'
+  source: catalog MCP census
