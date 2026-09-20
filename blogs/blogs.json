@@ -3,12 +3,9 @@
   "feeds": [
     {
       "source": "https://github.com/aimonlabs/aimon-typescript-sdk/blob/main/api.md",
-      "feed_url": "https://github.com/aimonlabs/aimon-typescript-sdk/blob/main/api.md",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "error": "HTTPError"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-09-13T13:00:00Z"
+  "fetched": "2026-09-19T20:17:39Z"
 }
