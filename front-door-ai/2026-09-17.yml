@@ -1,0 +1,32 @@
+# Front Door AI Index — aimon — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: aimon
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.aimon.ai
+  final_host: www.aimon.ai
+  ownership: own
+  owner: aimon
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 61
+  host_score: 61
+  density: 71.43
+  words: 854
+  tiers:
+    agentic: 14
+    core: 47
+    model: 0
+  ambiguous: 1
+  top_terms:
+    AI: 34
+    LLMs: 13
+    RAG: 9
+    agentic: 2
+    agent: 1
+    embedding: 1
+    fine-tune: 1
+    prompts: 1
